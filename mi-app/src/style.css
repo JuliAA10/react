@@ -1,0 +1,30 @@
+/* Añadir estilos generales para el fondo */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background: url("/public/Black_Minimalist.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Ajustar los estilos de los contenedores de los formularios */
+.form_container {
+  width: 30%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1000px) {
+  .form_container {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .form_container {
+    width: 65%;
+  }
+}
