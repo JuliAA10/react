@@ -1,8 +1,17 @@
 import React from "react";
 import "./style.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate(); // Create a useNavigate instance
+
+  const handleLogin = (event) => {
+    event.preventDefault(); // Prevent default form submission behavior
+
+    // Implement your login logic here (e.g., authentication with a server)
+    // If login is successful, redirect to Curso.js
+    navigate("/curso"); // Redirect to /curso path
+  };
   return (
     <div className="login template d-flex justify-content-center align-items-center vh-100">
       <div className="form_container p-5 rounded bg-white">
